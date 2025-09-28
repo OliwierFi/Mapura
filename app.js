@@ -196,6 +196,88 @@ const subjectsData = {
       {"name": "Arkusze informatyka rozszerzona", "url": "https://arkusze.pl/informatyka-matura-poziom-rozszerzony/"},
       {"name": "Próbne CKE informatyka", "url": "https://www.otouczelnie.pl/artykul/33361/Matura-2025-informatyka-poziom-rozszerzony"}
     ]
+  },
+  "chemistry_extended": {
+    "name": "Chemia - Poziom Rozszerzony",
+    "topics": [
+      "Atomy, cząsteczki i stechiometria chemiczna",
+      "Budowa atomu i konfiguracje elektronowe", 
+      "Liczby kwantowe i orbitale atomowe",
+      "Układ okresowy pierwiastków",
+      "Wiązania chemiczne - jonowe, kowalencyjne",
+      "Teoria VSEPR i kształty cząsteczek",
+      "Oddziaływania międzycząsteczkowe",
+      "Kinetyka chemiczna - szybkość reakcji",
+      "Równowaga chemiczna - zasada Le Chateliera",
+      "Termodynamika chemiczna - entalpia, entropia",
+      "Roztwory - stężenia, właściwości", 
+      "Kwasy i zasady - teorie, pH",
+      "Hydroliza soli i bufory",
+      "Reakcje redoks - stopnie utlenienia",
+      "Elektrochemia - ogniwa, elektroliza",
+      "Metale i niemetale - właściwości",
+      "Związki nieorganiczne - synteza",
+      "Węglowodory - alkany, alkeny, alkiny",
+      "Pochodne węglowodorów - alkohole, fenole", 
+      "Aldehydy, ketony i kwasy karboksylowe",
+      "Związki organiczne z azotem",
+      "Wielofunkcyjne pochodne organiczne",
+      "Chemia analityczna - metody oznaczania",
+      "Chemia praktyczna - laboratorium"
+    ],
+    "materials": [
+      {"name": "CKE Informator Chemia", "url": "https://arkusze.pl/informatory/informator-maturalny-chemia-2025.pdf"},
+      {"name": "Chemia dla maturzysty", "url": "https://wiecejnizmatura.pl/blog/matura-z-chemii"},
+      {"name": "Podstawa programowa chemia", "url": "https://biologhelp.pl/sites/default/files/materialy_maturalne/podstawa_programowa_chemia_2025_-_biologhelp.pdf"}
+    ],
+    "exams": [
+      {"name": "Arkusze chemia rozszerzona", "url": "https://arkusze.pl/matura-chemia-2025-maj-poziom-rozszerzony/"},
+      {"name": "Próbne CKE chemia", "url": "https://www.otouczelnie.pl/artykul/32837/Matura-2025-chemia-poziom-rozszerzony"}
+    ]
+  },
+  "biology_extended": {
+    "name": "Biologia - Poziom Rozszerzony",
+    "topics": [
+      "Chemizm życia - makro i mikroelementy",
+      "Węglowodany, lipidy, białka, kwasy nukleinowe",
+      "Budowa komórki prokariotycznej",
+      "Budowa komórki eukariotycznej",
+      "Błony biologiczne i transport przez błony",
+      "Organizmy jednokomórkowe i wielokomórkowe",
+      "Enzymy - budowa, działanie, regulacja",
+      "Metabolizm - anabolizm i katabolizm",
+      "Fotosynteza - faza świetlna i ciemna",
+      "Oddychanie komórkowe - glikoliza, cykl Krebsa",
+      "Cykl komórkowy i jego regulacja",
+      "Mitoza i mejoza - przebieg i znaczenie",
+      "Wirusy - budowa, cykl rozwojowy",
+      "Bakterie - morfologia, fizjologia",
+      "Protisty - różnorodność i znaczenie", 
+      "Grzyby - budowa, rozmnażanie, ekologia",
+      "Rośliny - anatomia i fizjologia",
+      "Zwierzęta - systemy narządowe",
+      "Anatomia i fizjologia człowieka",
+      "Układ krążenia, oddechowy, pokarmowy",
+      "Układ nerwowy i układ hormonalny",
+      "Genetyka klasyczna - prawa Mendla",
+      "Genetyka molekularna - DNA, RNA, białka", 
+      "Mutacje i ich konsekwencje",
+      "Mechanizmy ewolucji - dobór naturalny",
+      "Specjacja i systematyka organizmów",
+      "Ekologia - ekosystemy i ich funkcjonowanie",
+      "Przepływ energii w ekosystemach",
+      "Krążenie materii w przyrodzie",
+      "Ochrona przyrody i bioróżnorodność"
+    ],
+    "materials": [
+      {"name": "CKE Informator Biologia", "url": "https://arkusze.pl/informatory/informator-maturalny-biologia-2025.pdf"},
+      {"name": "Biologia dla maturzysty", "url": "https://wiecejnizmatura.pl/blog/matura-z-biologii"},
+      {"name": "Podstawa programowa biologia", "url": "https://biologhelp.pl/sites/default/files/materialy_maturalne/podstawa_programowa_biologia_2025_-_biologhelp.pdf"}
+    ],
+    "exams": [
+      {"name": "Arkusze biologia rozszerzona", "url": "https://arkusze.pl/matura-biologia-2025-maj-poziom-rozszerzony/"},
+      {"name": "Próbne CKE biologia", "url": "https://powtorkazbiologii.pl/matura-z-biologii-2025-wymagania-egzaminacyjne-formula2023/"}
+    ]
   }
 };
 
