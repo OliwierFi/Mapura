@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matura 2025 - Śledź swój postęp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>📚 Matura 2025</h1>
+                <p>Śledź swój postęp w przygotowaniach do matury</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container">
+            <!-- Overall progress section -->
+            <section class="overall-progress">
+                <div class="card">
+                    <div class="card__body">
+                        <h2>Ogólny postęp</h2>
+                        <div class="progress-overview">
+                            <div class="progress-item">
+                                <span class="progress-label">Ukończone tematy:</span>
+                                <span class="progress-count" id="completed-topics">0 / 0</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" id="overall-progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-percentage" id="overall-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subject selection -->
+            <section class="subject-selection">
+                <h2>Wybierz przedmiot i poziom</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card" data-subject="polish_basic">
+                        <div class="subject-level">PODSTAWOWY</div>
+                        <h3>Język Polski</h3>
+                        <div class="subject-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-card" data-subject="math_basic">
+                        <div class="subject-level">PODSTAWOWY</div>
+                        <h3>Matematyka</h3>
+                        <div class="subject-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-card" data-subject="english_basic">
+                        <div class="subject-level">PODSTAWOWY</div>
+                        <h3>Język Angielski</h3>
+                        <div class="subject-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-card" data-subject="math_extended">
+                        <div class="subject-level subject-level--extended">ROZSZERZONY</div>
+                        <h3>Matematyka</h3>
+                        <div class="subject-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-card" data-subject="physics_extended">
+                        <div class="subject-level subject-level--extended">ROZSZERZONY</div>
+                        <h3>Fizyka</h3>
+                        <div class="subject-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-card" data-subject="computer_science_extended">
+                        <div class="subject-level subject-level--extended">ROZSZERZONY</div>
+                        <h3>Informatyka</h3>
+                        <div class="subject-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subject details modal -->
+            <div class="modal hidden" id="subject-modal">
+                <div class="modal-overlay" id="modal-overlay"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 id="modal-title">Przedmiot</h2>
+                        <button class="modal-close" id="modal-close">&times;</button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <!-- Progress section -->
+                        <div class="subject-progress-details">
+                            <div class="progress-stats">
+                                <div class="stat">
+                                    <span class="stat-number" id="modal-completed">0</span>
+                                    <span class="stat-label">Ukończone</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number" id="modal-total">0</span>
+                                    <span class="stat-label">Łącznie</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" id="modal-progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <span class="progress-percentage" id="modal-percentage">0%</span>
+                            </div>
+                        </div>
+
+                        <!-- Topics list -->
+                        <div class="topics-section">
+                            <h3>Tematy do opanowania</h3>
+                            <div class="topics-list" id="topics-list">
+                                <!-- Topics will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Materials section -->
+                        <div class="materials-section">
+                            <h3>🎓 Materiały do nauki</h3>
+                            <div class="materials-list" id="materials-list">
+                                <!-- Materials will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Exams section -->
+                        <div class="exams-section">
+                            <h3>📝 Arkusze i próbne egzaminy</h3>
+                            <div class="exams-list" id="exams-list">
+                                <!-- Exams will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Motivational message overlay -->
+    <div class="motivation-overlay hidden" id="motivation-overlay">
+        <div class="motivation-content">
+            <div class="motivation-text" id="motivation-text"></div>
+        </div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas class="confetti-canvas hidden" id="confetti-canvas"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
